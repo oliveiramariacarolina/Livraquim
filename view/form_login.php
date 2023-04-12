@@ -9,15 +9,15 @@
                 <form class="form" action="controle/login.php" method="POST">
                     <label class="label-input">
                         <i class="far fa-user icon-modify"></i>
-                        <input type="text" name="login" placeholder="CPF">
+                        <input class="parametro" type="text" name="login" placeholder="Login">
                     </label>
 
                     <label class="label-input">
                         <i class="fas fa-lock icon-modify"></i>
-                        <input type="password" name="senha" placeholder="Senha">
+                        <input class="parametro" type="password" name="senha" placeholder="Senha">
                     </label>
 
-                    <input type="submit" value="Enviar">
+                    <input class="btn" type="submit" value="Enviar">
                     
                 </form>
                 <p class="forget-password"><a href="#">Esqueceu sua senha?</a></p>

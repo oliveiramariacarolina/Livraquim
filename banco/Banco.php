@@ -5,7 +5,7 @@
     public $conex;
 
     public function __construct(){
-      $this->conex = new PDO('mysql:host=localhost;dbname-livraria',"root","");
+      $this->conex = new PDO('mysql:host=localhost;dbname=livraria',"root","");
     }
     
     public function executar($sql){
@@ -19,12 +19,13 @@
 
     public function consultar($sql){
       //usada quando preciso pegar as informações das linhas das tabelas
-      $resultado=$this->conex->query($sql);
-      $num_linhas=$resultado->rowCount();
+      $resultado = $this->conex->query($sql);
+      $num_linhas = $resultado->rowCount();
       if ($num_linhas>0) {
         //FETCH significa BUSCAR 
         return $resultado->fetch(PDO::FETCH_ASSOC);
-      } else {
+      } 
+      else {
         return false;
       }
       

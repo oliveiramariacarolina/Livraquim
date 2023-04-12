@@ -9,12 +9,12 @@
                 <form class="form" action="controle/login.php" method="POST">
                     <label class="label-input">
                         <i class="far fa-user icon-modify"></i>
-                        <input class="parametro" type="text" name="login" placeholder="Login">
+                        <input required class="parametro" type="text" name="login" placeholder="Login">
                     </label>
 
                     <label class="label-input">
                         <i class="fas fa-lock icon-modify"></i>
-                        <input class="parametro" type="password" name="senha" placeholder="Senha">
+                        <input required class="parametro" type="password" name="senha" placeholder="Senha">
                     </label>
 
                     <input class="btn" type="submit" value="Enviar">

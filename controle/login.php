@@ -8,7 +8,7 @@
 
     $banco = new Banco();
 
-    $sql = "select*from usario where login='$login' and senha='$senha'";
+    $sql = "select*from usuario where login='$login' and senha='$senha'";
 
     $resultado = $banco->consultar($sql);
 

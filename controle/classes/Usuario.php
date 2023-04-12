@@ -17,7 +17,7 @@
                         //criar sessão
                         session_start();
                         $_SESSION['nome']=$this->nome;
-                        header("Location:../view/form_livro");
+                        header("Location:../view/form_livro.php");
                 }
 
                 public function testaLogin(){

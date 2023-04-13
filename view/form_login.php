@@ -22,3 +22,4 @@
                 </form>
                 <p class="forget-password"><a href="#">Esqueceu sua senha?</a></p>
             </div>
+</div>

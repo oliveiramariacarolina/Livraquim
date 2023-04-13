@@ -1,3 +1,7 @@
+<?php
+    require_once("../controle/login.php");
+    testa_login();
+?>
 <!DOCTYPE html>
 <html lang="pt">
 <head>

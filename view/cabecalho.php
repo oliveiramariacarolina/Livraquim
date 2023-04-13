@@ -8,4 +8,5 @@
     <li><a href="form_livro.php">Cadastra Livro</a></li>
     <li><a href="form_venda.php">Vendas</a></li>
     <li><a href="form_relatorio.php">Relatórios</a></li>
+    <li><a href="../controle/login.php?sair=true">Sair</a></li>
 </ul>

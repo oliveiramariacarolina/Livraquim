@@ -32,6 +32,11 @@
         session_start();
         if(!isset($_SESSION['nome'])){
             header("Location:../index2.php");
+    }
+    function logado(){
+        session_start();
+        if(isset($_SESSION['nome'])){
+            header("Location:../view/form_livro.php");
         }
     }
 ?>

@@ -1,33 +1,35 @@
 <?php
 
-        class Usuario{
-                public $_SESSION;
+class Usuario{
 
-                private $nome;
-                private $login;
-                private $senha;
+       public $_SESSION;
 
-                public function __construct($nome, $login, $senha){
-                        $this->nome=$nome;
-                        $this->login=$login;
-                        $this->senha=$senha;
-                }
+        private $nome;
+        private $login;
+        private $senha;
 
-                public function logar(){
-                        //criar sessão
-                        session_start();
-                        $_SESSION['nome']=$this->nome;
-                        header("Location:../view/form_livro.php");
-                }
+        public function __construct($nome,$login,$senha){
+           $this->nome=$nome;
+           $this->login=$login;
+           $this->senha=$senha;
+        }
 
-                public function testaLogin(){
-                        session_start();
-                        if(isset($_SESSION['nome'])){
-                                return true;
-                        }else{
-                                return false;
-                        }
+        public function logar(){
+             //criar a sessão
+             session_start();
+             $_SESSION['nome']=$this->nome; 
+             header("Location:../view/form_livro.php");           
+        }
+
+        public function testaLogin(){
+                session_start();
+                if(isset($_SESSION['nome'])){
+                    return true;
+                }           
+                else{
+                    return false;
                 }
         }
+}
 
 ?>

@@ -90,7 +90,7 @@ body {
     width: 55%;
 }
 
-.parametro {
+.form input {
     height: 45px;
     width: 100%;
     border: none;
@@ -129,6 +129,7 @@ input:-webkit-autofill {
     background-color: #52AADB;
     border: 1px solid transparent;
     transition: 1s;
+    font-family: 'Poppins', sans-serif;
 }
 
 .btn:hover {
@@ -140,7 +141,6 @@ input:-webkit-autofill {
 .forget-password {
     text-align: center;
     line-height: 25px;
-    cursor: pointer;
 }
 
 .forget-password a {

@@ -1,7 +1,7 @@
 <h1 align="center"> LivrAquim </h1>
 
 <p align="center">
-Página de login simples e responsiva.
+Projeto Integrador - LivraQuim
 </p>
 
 <p align="center">

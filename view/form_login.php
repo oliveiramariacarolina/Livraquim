@@ -9,17 +9,16 @@
                 <form class="form" action="controle/login.php" method="POST">
                     <label class="label-input">
                         <i class="far fa-user icon-modify"></i>
-                        <input required class="parametro" type="text" name="login" placeholder="Login">
+                        <input type="text" name="login" placeholder="CPF">
                     </label>
 
                     <label class="label-input">
                         <i class="fas fa-lock icon-modify"></i>
-                        <input required class="parametro" type="password" name="senha" placeholder="Senha">
+                        <input type="password" name="senha" placeholder="Senha">
                     </label>
 
-                    <input class="btn" type="submit" value="Enviar">
+                    <input type="submit" value="Enviar">
                     
                 </form>
                 <p class="forget-password"><a href="#">Esqueceu sua senha?</a></p>
             </div>
-</div>

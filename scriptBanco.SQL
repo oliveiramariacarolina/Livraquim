@@ -19,7 +19,7 @@ CREATE TABLE editora(
 
 CREATE TABLE autor(
   id_autor INTEGER NOT NULL PRIMARY KEY AUTO_INCREMENT,
-  autor VARCHAR(255));
+  nome VARCHAR(255));
 
 CREATE TABLE tema(
   id_tema INTEGER NOT NULL PRIMARY KEY AUTO_INCREMENT,
@@ -29,6 +29,7 @@ CREATE TABLE livro(
   id_livro INTEGER NOT NULL PRIMARY KEY AUTO_INCREMENT,
   isbn VARCHAR(255),
   titulo VARCHAR(255),
+  foto VARCHAR(255),
   ano INTEGER,
   quantidade INTEGER,
   precovenda DECIMAL(10,2), 
@@ -73,8 +74,8 @@ INSERT INTO tema(tema) VALUES("Ficção");
 INSERT INTO tema(tema) VALUES("Romance");
 INSERT INTO tema(tema) VALUES("Infantil");
 
-INSERT INTO autor(autor) VALUES("Andrew Stuart Tanembaum");
-INSERT INTO autor(autor) VALUES("Roger Pressman");
-INSERT INTO autor(autor) VALUES("Ian Soerville");
-INSERT INTO autor(autor) VALUES("Mário Sérgio Cortella");
-INSERT INTO autor(autor) VALUES("Maurício de Souza");
+INSERT INTO autor(nome) VALUES("Andrew Stuart Tanembaum");
+INSERT INTO autor(nome) VALUES("Roger Pressman");
+INSERT INTO autor(nome) VALUES("Ian Soerville");
+INSERT INTO autor(nome) VALUES("Mário Sérgio Cortella");
+INSERT INTO autor(nome) VALUES("Maurício de Souza");

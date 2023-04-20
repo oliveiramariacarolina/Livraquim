@@ -18,7 +18,7 @@
             $usuario->logar();
         }
         else{
-            echo "deu ruim";
+            header("Location:../view/falha_login.php");
             return false;
         }
 

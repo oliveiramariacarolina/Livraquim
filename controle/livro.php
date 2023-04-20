@@ -7,7 +7,7 @@
         $sql = "select*from autor";
         $resultado = $banco->consultar($sql);
         while($linha = $resultado->fetch(PDO::FETCH_ASSOC)){
-            echo "<option value=$linha[id_autor]>$linha[autor]</option>";
+            echo "<option value=$linha[id_autor]>$linha[nome]</option>";
         }             
     }
 
@@ -46,16 +46,16 @@
         $precocompra = floatval($precocompra);
         $precovenda = floatval($precovenda);
 
-        $pasta = '../img/';
+        $pasta = 'capas/';
         $caminhocompleto = $pasta.basename($nomeaequivo);
         move_uploaded_file($foto['tmp_name'], $caminhocompleto);
 
         $banco = new Banco();
         $sql = "INSERT INTO livro(isbn,titulo,ano,id_autor,id_tema,id_editora,precocompra,precovenda,quantidade,foto) VALUES ('$isbn','$titulo','$ano','$id_autor','$id_tema','$id_editora','$precocompra','$precovenda','$quantidade','$caminhocompleto')";
         if($banco->executar($sql)){
-            echo "Livro cadastrado com sucesso!";
+            header("Location:../view/sucesso_cadastro.php");
         }else{
-            echo "Tente cadastrar novamente!";
+            header("Location:../view/falha_cadastro.php");
         }
     }
 

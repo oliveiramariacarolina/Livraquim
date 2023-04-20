@@ -1,7 +1,7 @@
 <?php
      session_start();
      if(isset($_SESSION['nome']))
-        header("Location:view/form_livro.php");
+        header("Location:view/bem_vindo.php");
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">

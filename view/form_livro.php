@@ -1,6 +1,7 @@
 <?php
-    require_once("../controle/login.php");
-    testa_login();
+  require_once("../controle/login.php");
+  testa_login();
+  require("cabecalho.php");
 ?>
 <!DOCTYPE html>
 <html lang="pt">
@@ -16,9 +17,6 @@
     </style>
 </head>
 <body>
-    <?php
-        require("cabecalho.php");
-    ?>
     <div id="principal">
         <h2>Cadastro de Livro</h2>
        <form enctype="multipart/form-data" action="../controle/livro.php" method="POST">
@@ -48,9 +46,9 @@
           </div>
 
             <label>ISBN: </label>
-            <input type="text" name="isbn"><br>
+            <input required type="text" name="isbn"><br>
             <label>Título: </label>
-            <input type="text" name="titulo"><br>
+            <input required type="text" name="titulo"><br>
             <label>Ano: </label>
             <select name="ano">
                 <?php
@@ -67,7 +65,7 @@
                 ?>
             </select>
             <label>Quantidade</label>
-            <input type="number" name="quantidade"><br>
+            <input required type="number" name="quantidade"><br>
             <label>Tema:</label>
             <select name="id_tema">
                 <?php
@@ -81,9 +79,9 @@
                 ?>
             </select><br>
             <label> Preço de Custo </label>
-            <input type="text" name="precocompra"><br>
+            <input required type="text" name="precocompra"><br>
             <label> Preço de Venda </label>
-            <input type="text" name="precovenda"><br><br>
+            <input required type="text" name="precovenda"><br><br>
             <input type="submit" value="Enviar">
        </form>
     </div>
